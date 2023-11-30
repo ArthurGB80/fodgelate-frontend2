@@ -6,12 +6,10 @@ describe('MobileMenuComponent', () => {
   let component: MobileMenuComponent;
   let fixture: ComponentFixture<MobileMenuComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [MobileMenuComponent]
-    })
-    .compileComponents();
-    
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [MobileMenuComponent]
+    });
     fixture = TestBed.createComponent(MobileMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
